@@ -1,0 +1,36 @@
+
+# Dependencias de Node
+node_modules/
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+logs/
+
+# Datos temporales/de caché
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Builds o compilaciones
+dist/
+build/
+
+# IDEs y editores (ejemplos comunes)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
