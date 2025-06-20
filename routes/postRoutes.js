@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try { 
-        const post = await Post.findById(req.params.id).populate('ownwer', 'username email');
+        const post = await Post.findById(req.params.id).populate('owner', 'username email');
         if (!post) {
             return res.status(404).json({message: 'Post no encontrado'});
         }

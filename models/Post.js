@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
@@ -15,6 +16,7 @@ const postSchema = new mongoose.Schema({
         required: true,
         ref: 'User'
     }
-})
+}, { timestamps: true }); 
 
-module.exports = mongoose.model('Post', postSchema);
+
+module.exports = mongoose.models.Post || mongoose.model('Post', postSchema);

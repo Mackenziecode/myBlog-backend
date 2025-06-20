@@ -132,13 +132,6 @@ router.delete('/:id',verifyToken,authorizeRole('admin'), async (req, res) => {
     }
 
 
-       /* const result = await  User.deleteOne({_id: req.params.id});
-        if (result.deleteCount ===0)  {
-            return res.status(404).json({message: 'usuario no encontrado'})
-        }
-        res.status(200).json({message: 'usuario eliminado '})
-    } catch (err) {
-        res.status(500).json({messag: err.mesage})*/
     
 });
 
